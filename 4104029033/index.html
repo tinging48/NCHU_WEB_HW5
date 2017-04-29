@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>表單</title>
+	<style>
+
+		form {
+			background-color:rgb(250, 230, 280);
+
+			padding-top:20px;
+			padding-left:50px;
+			padding-right:5%;
+			padding-bottom:50px;
+			text-align:center;
+		}
+	</style>
+	</head>
+
+	<body>
+	<h1>履歷表</h1>
+
+	<form action="print.jsp" method="post">
+	姓名：
+	<input type="text" name="username" value="王竹妙"/><br><br>
+	生日：
+	<input type="text" name="birthday" value="1997/5/19"/><br><br>
+	性別：
+	<input type="radio" name="sex" value="男">男
+	<input type="radio" name="sex" value="女" checked>女<br><br>
+	興趣：<br>
+	<input type="checkbox" name="hobby" value="游泳" checked>游泳
+	<input type="checkbox" name="hobby" value="看小說">看小說
+	<input type="checkbox" name="hobby" value="看電影">看電影
+	<input type="checkbox" name="hobby" value="打球">打球<br><br>
+
+	年級：
+	<SELECT name="grade" size=1>
+		<OPTION selected>Grage 1</OPTION>
+		<OPTION>Grage 2</OPTION>
+		<OPTION >Grage 3</OPTION>
+		<OPTION >Grage 4</OPTION>
+	</SELECT><br><br>
+
+	喜歡吃：(按著CTRL可複選)<br>
+	<SELECT name=food size=5 Multiple>
+		<OPTION value = "冰淇淋" selected>冰淇淋</OPTION>
+		<OPTION value = "巧克力">巧克力</OPTION>
+		<OPTION value = "泡芙" selected>泡芙</OPTION>
+		<OPTION value = "披薩" >披薩</OPTION>
+		<OPTION value = "蛋糕" >蛋糕</OPTION>
+	</SELECT>	<br><br>
+
+	自傳：<br>
+	<textarea rows=10 cols=50 name="note"></textarea><br><br>
+
+	<input type="submit" value="送出"/>
+	</form>
+	</body>
+
+</html>
